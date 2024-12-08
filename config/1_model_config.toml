@@ -1,0 +1,42 @@
+[motors]
+[motors.shoulder_pan_joint]
+name = "CRA-RI100-142-PRO-XX"
+gear_ratio = 121
+max_allowable_torque = 267
+inertia = 0.0003601 # kg m^2
+mass = 3.8 # kg
+
+[motors.shoulder_lift_joint]
+name = "CRA-RI80-110-PRO-XX.101"
+gear_ratio = 101
+max_allowable_torque = 133
+inertia = 0.0001255 # kg m^2
+mass = 2.1
+
+[motors.elbow_joint]
+name = "CRA-RI80-110-PRO-XX.81"
+gear_ratio = 81
+max_allowable_torque = 107
+inertia = 0.0001255 # kg m^2
+mass = 2.1
+
+[motors.wrist_1_joint]
+name = "CRA-RI80-110-PRO-XX.51"
+gear_ratio = 51
+max_allowable_torque = 68.5
+inertia = 0.0001255 # kg m^2
+mass = 2.1
+
+[motors.wrist_2_joint]
+name = "CRA-RI80-110-PRO-XX.51"
+gear_ratio = 51
+max_allowable_torque = 68.5
+inertia = 0.0001255 # kg m^2
+mass = 2.1
+
+[motors.wrist_3_joint]
+name = "CRA-RI80-110-PRO-XX.51"
+gear_ratio = 51
+max_allowable_torque = 68.5
+inertia = 0.0001255 # kg m^2
+mass = 2.1
