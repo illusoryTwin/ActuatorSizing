@@ -1,41 +1,41 @@
 from lxml import etree
 
-file_path="../mjmodel.xml"
+file_path = "../mjmodel.xml"
 tree = etree.parse(file_path)
 
 root = tree.getroot()
 
-joints = root.findall('.//joint')
+joints = root.findall(".//joint")
 
 for joint in joints:
-    print(joint.get('name'), joint.get('axis'))
+    print(joint.get("name"), joint.get("axis"))
 
 
 reflected_inertias = {
     "shoulder_pan_joint": 4,
-    "shoulder_lift_joint" : 4,
+    "shoulder_lift_joint": 4,
     "elbow_joint": 1,
     "wrist_1_joint": 2,
-    "wrist_2_joint" : 1,
-    "wrist_3_joint": 3
+    "wrist_2_joint": 1,
+    "wrist_3_joint": 3,
 }
 
-masses =  {
+masses = {
     "shoulder_pan_joint": 4,
-    "shoulder_lift_joint" : 4,
+    "shoulder_lift_joint": 4,
     "elbow_joint": 1,
     "wrist_1_joint": 2,
-    "wrist_2_joint" : 1,
-    "wrist_3_joint": 3
+    "wrist_2_joint": 1,
+    "wrist_3_joint": 3,
 }
 
 new_inertias = {
     "shoulder_pan_joint": "1 1 1",
-    "shoulder_lift_joint" : "4 4 4",
+    "shoulder_lift_joint": "4 4 4",
     "elbow_joint": "3 3 3",
     "wrist_1_joint": "2 2 2",
-    "wrist_2_joint" : "1 1 1",
-    "wrist_3_joint": "5 5 5"
+    "wrist_2_joint": "1 1 1",
+    "wrist_3_joint": "5 5 5",
 }
 
 # Motor configuration for each joint

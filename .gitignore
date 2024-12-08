@@ -2,3 +2,4 @@
 *.asv
 *.rights
 /meta-information.json
+/src/__pycache__
