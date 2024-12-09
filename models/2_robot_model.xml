@@ -45,7 +45,7 @@
                 <body name="wrist_3_link" pos="0 0 0.08535">
                   <inertial pos="0 0 0" quat="0.5 0.5 -0.5 0.5" mass="2.45" diaginertia="0.000984375 0.00103769 0.000912187"/>
                   <joint name="wrist_3_joint" pos="0 0 0" axis="0 1 0" range="-6.28319 6.28319" actuatorfrcrange="-54 54" armature="0.3264255"/>
-                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgbgta="0.7 0.7 0.7 1" mesh="wrist3"/>
+                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.7 0.7 0.7 1" mesh="wrist3"/>
                   <geom type="mesh" rgba="0.7 0.7 0.7 1" mesh="wrist3"/>
                   <body name="ee_link" pos="0 0.0819 0" quat="0.707107 0 0 0.707107">
                     <geom size="0.005 0.005 0.005" pos="-0.01 0 0" type="box"/>

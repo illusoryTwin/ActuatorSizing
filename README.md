@@ -1,54 +1,49 @@
-https://www.universal-robots.com/media/1807464/ur3e-rgb-fact-sheet-landscape-a4.pdf
+# Actuator Sizing. 
 
-i didnt manage to choose a correct motor based on the sizes since all the mototrs from the table are too small for the UR3 manipulator; however, I chose 
-them based on other physical params. This, for the shoulder link I chose a motor with a high gear ratio
--------------------------------
-CRA-RI110-170-PRO-XX 30:1 – 50:1 (161)
-max allowable torque 586 N*m 
+**Choose custom motors for the UR3 manipulator**
 
-CRA-RI100-142-PRO-XX (121)
-max allowable torque 267 N*m 
----------------------------------
+I used the baseline model of the UR3 manipulator from this [repository](https://github.com/Daniella1/urdf_files_dataset/tree/main).
 
-For the next joint:
+## Project structure
 
-CRA-RI100-142-PRO-XX (121)
-max allowable torque 267 N*m 
+- **Configuration Files**: Motor configuration parameters are stored in the `/config` folder in `.toml` format.
+- **Model Parser**: The `_model_parser.py` file inside the `/src` folder parses these configurations and updates the baseline model accordingly. The updated model is stored in the `/models` folder as an XML file.
 
-CRA-RI80-110-PRO-XX (121)
-max allowable torque 133 N*m 
+Currently, four motor configurations are provided for testing and simulation.
 
-CRA-RI80-110-PRO-XX (101)
-max allowable torque 133 N*m 
+## Launch instrucitons
 
--------------------------------
+To launch the simulation, you can use the following command:
 
-CRA-RI80-110-PRO-XX (101)
-max allowable torque 133 N*m 
+```
+cd models
+python -m mujoco.viewer --mjcf=1_robot_model.xml 
+```
+You can replace `1_robot_model.xml` with any of the four available models.
 
 
-CRA-RI80-110-PRO-XX (81)
-max allowable torque 107 N*m 
+Alternatively, you can launch the `simulation.py` script:
 
---------------------------------
+```
+cd src
+python3 simulation.py 
+```
 
-CRA-RI80-110-PRO-XX (81)
-max allowable torque 107 N*m 
+## Explanation of Motor Choice
 
-CRA-RI80-110-PRO-XX (51)
-max allowable torque 68.5 N*m 
+The main motor's models I used were:
 
-------------------------------------
-CRA-RI80-110-PRO-XX(51)
-max allowable torque 68.5 N*m 
+- CRA-RI80-110-PRO-XX
+- CRA-RI80-110-NH-XX
 
-CRA-RI100-142-PRO-XX(51)
-max allowable torque 120 N*m 
+from this selection table:
 
-----------------------------------
+![selection_table](report_src/Motor_selection_table.png)
 
-CRA-RI80-110-PRO-XX(51)
-max allowable torque 68.5 N*m 
+I chose them primarily because of the appropriate geometrical parameters.
 
-CRA-RI100-142-PRO-XX(51)
-max allowable torque 120 N*m 
+For the shoulder joints, I used large gear ratios, approximately 161:1 or 121:1.
+
+For the elbow joint, I used a smaller ratio of 121:1 or 101:1.
+
+The smallest gear ratio was used for the wrist joint, with a ratio of 51:1.
