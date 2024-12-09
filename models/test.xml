@@ -19,7 +19,7 @@
       <geom type="mesh" rgba="0.7 0.7 0.7 1" mesh="base"/>
       <body name="shoulder_link" pos="0 0 0.1519">
         <inertial pos="0 0 0" mass="4.1" diaginertia="0.00809316 0.00809316 0.0057505"/>
-        <joint name="shoulder_pan_joint" pos="0 0 0" axis="0 0 1" range="-6.28319 6.28319" actuatorfrcrange="-330 330" armature="1.2802254999999998"/>
+        <joint name="shoulder_pan_joint" pos="0 0 0" axis="0 0 1" range="-6.28319 6.28319" actuatorfrcrange="-330 330" armature="3.2530854999999996"/>
         <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.7 0.7 0.7 1" mesh="shoulder"/>
         <geom type="mesh" rgba="0.7 0.7 0.7 1" mesh="shoulder"/>
         <body name="upper_arm_link" pos="0 0.1198 0" quat="0.707107 0 0.707107 0">
@@ -45,7 +45,7 @@
                 <body name="wrist_3_link" pos="0 0 0.08535">
                   <inertial pos="0 0 0" quat="0.5 0.5 -0.5 0.5" mass="2.45" diaginertia="0.000984375 0.00103769 0.000912187"/>
                   <joint name="wrist_3_joint" pos="0 0 0" axis="0 1 0" range="-6.28319 6.28319" actuatorfrcrange="-54 54" armature="0.3264255"/>
-                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.7 0.7 0.7 1" mesh="wrist3"/>
+                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgbgta="0.7 0.7 0.7 1" mesh="wrist3"/>
                   <geom type="mesh" rgba="0.7 0.7 0.7 1" mesh="wrist3"/>
                   <body name="ee_link" pos="0 0.0819 0" quat="0.707107 0 0 0.707107">
                     <geom size="0.005 0.005 0.005" pos="-0.01 0 0" type="box"/>
@@ -60,4 +60,4 @@
       <body name="base" quat="0 0 0 -1"/>
     </body>
   </worldbody>
-<actuator><motor name="CRA-RI80-110-PRO-XX.101_shoulder_pan_joint" joint="shoulder_pan_joint" ctrlrange="0 133"/><motor name="CRA-RI80-110-PRO-XX.101_shoulder_lift_joint" joint="shoulder_lift_joint" ctrlrange="0 133"/><motor name="CRA-RI80-110-PRO-XX.81_elbow_joint" joint="elbow_joint" ctrlrange="0 107"/><motor name="CRA-RI80-110-PRO-XX.51_wrist_1_joint" joint="wrist_1_joint" ctrlrange="0 68.5"/><motor name="CRA-RI80-110-PRO-XX.51_wrist_2_joint" joint="wrist_2_joint" ctrlrange="0 68.5"/><motor name="CRA-RI80-110-PRO-XX.51_wrist_3_joint" joint="wrist_3_joint" ctrlrange="0 68.5"/></actuator></mujoco>
+<actuator><motor name="CRA-RI80-110-PRO-XX.161_shoulder_pan_joint" joint="shoulder_pan_joint" ctrlrange="0 133"/><motor name="CRA-RI80-110-PRO-XX.101_shoulder_lift_joint" joint="shoulder_lift_joint" ctrlrange="0 133"/><motor name="CRA-RI80-110-PRO-XX.81_elbow_joint" joint="elbow_joint" ctrlrange="0 107"/><motor name="CRA-RI80-110-PRO-XX.51_wrist_1_joint" joint="wrist_1_joint" ctrlrange="0 68.5"/><motor name="CRA-RI80-110-PRO-XX.51_wrist_2_joint" joint="wrist_2_joint" ctrlrange="0 68.5"/><motor name="CRA-RI80-110-PRO-XX.51_wrist_3_joint" joint="wrist_3_joint" ctrlrange="0 68.5"/></actuator></mujoco>

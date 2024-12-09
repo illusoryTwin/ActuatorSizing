@@ -1,7 +1,7 @@
 [motors]
 [motors.shoulder_pan_joint]
-name = "CRA-RI80-110-PRO-XX.161"
-gear_ratio = 161
+name = "CRA-RI80-110-PRO-XX.121"
+gear_ratio = 121
 max_allowable_torque = 133
 inertia = 0.0001255 # kg m^2
 mass = 2.1
@@ -14,8 +14,8 @@ inertia = 0.0001255 # kg m^2
 mass = 2.1
 
 [motors.elbow_joint]
-name = "CRA-RI80-110-PRO-XX.81"
-gear_ratio = 81
+name = "CRA-RI80-110-PRO-XX.101"
+gear_ratio = 101
 max_allowable_torque = 107
 inertia = 0.0001255 # kg m^2
 mass = 2.1

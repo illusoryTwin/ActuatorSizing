@@ -85,7 +85,6 @@ def _get_links_lengths(xml_file_path, motors_config_file):
         rotation_axis = joint.get("axis")
 
         axis_components = [int(x) for x in rotation_axis.split()]
-        print(axis_components)
 
         if axis_components == [1, 0, 0]:
             axis_idx = 0
@@ -95,8 +94,6 @@ def _get_links_lengths(xml_file_path, motors_config_file):
             axis_idx = 2
         else:
             axis_idx = 100000000
-
-        print("axis_idx", axis_idx)
 
         if joint is not None:
             body = joint.getparent()

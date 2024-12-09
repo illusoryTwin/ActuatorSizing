@@ -29,7 +29,7 @@
           <geom type="mesh" rgba="0.7 0.7 0.7 1" mesh="upperarm"/>
           <body name="forearm_link" pos="0 -0.0925 0.24365">
             <inertial pos="0 0 0.106625" mass="3.3600000000000003" diaginertia="0.00654681 0.00667231 0.00354375"/>
-            <joint name="elbow_joint" pos="0 0 0" axis="0 1 0" range="-3.14159 3.14159" actuatorfrcrange="-150 150" armature="0.8234054999999999"/>
+            <joint name="elbow_joint" pos="0 0 0" axis="0 1 0" range="-3.14159 3.14159" actuatorfrcrange="-150 150" armature="1.2802254999999998"/>
             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.7 0.7 0.7 1" mesh="forearm"/>
             <geom type="mesh" rgba="0.7 0.7 0.7 1" mesh="forearm"/>
             <body name="wrist_1_link" pos="0 0 0.21325" quat="0.707107 0 0.707107 0">
@@ -60,4 +60,4 @@
       <body name="base" quat="0 0 0 -1"/>
     </body>
   </worldbody>
-<actuator><motor name="CRA-RI80-110-PRO-XX.121_shoulder_pan_joint" joint="shoulder_pan_joint" ctrlrange="0 133"/><motor name="CRA-RI80-110-PRO-XX.101_shoulder_lift_joint" joint="shoulder_lift_joint" ctrlrange="0 133"/><motor name="CRA-RI80-110-PRO-XX.81_elbow_joint" joint="elbow_joint" ctrlrange="0 107"/><motor name="CRA-RI80-110-PRO-XX.51_wrist_1_joint" joint="wrist_1_joint" ctrlrange="0 68.5"/><motor name="CRA-RI80-110-PRO-XX.51_wrist_2_joint" joint="wrist_2_joint" ctrlrange="0 68.5"/><motor name="CRA-RI80-110-PRO-XX.51_wrist_3_joint" joint="wrist_3_joint" ctrlrange="0 68.5"/></actuator></mujoco>
+<actuator><motor name="CRA-RI80-110-PRO-XX.121_shoulder_pan_joint" joint="shoulder_pan_joint" ctrlrange="0 133"/><motor name="CRA-RI80-110-PRO-XX.101_shoulder_lift_joint" joint="shoulder_lift_joint" ctrlrange="0 133"/><motor name="CRA-RI80-110-PRO-XX.101_elbow_joint" joint="elbow_joint" ctrlrange="0 107"/><motor name="CRA-RI80-110-PRO-XX.51_wrist_1_joint" joint="wrist_1_joint" ctrlrange="0 68.5"/><motor name="CRA-RI80-110-PRO-XX.51_wrist_2_joint" joint="wrist_2_joint" ctrlrange="0 68.5"/><motor name="CRA-RI80-110-PRO-XX.51_wrist_3_joint" joint="wrist_3_joint" ctrlrange="0 68.5"/></actuator></mujoco>
