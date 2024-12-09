@@ -42,6 +42,8 @@ from this selection table:
 
 I chose them primarily because of the appropriate geometrical parameters.
 
+Another important aspect is gear ratio. 
+
 For the shoulder joints, I used large gear ratios, approximately 161:1 or 121:1.
 
 For the elbow joint, I used a smaller ratio of 121:1 or 101:1.
